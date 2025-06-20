@@ -1,6 +1,8 @@
 package com.example.exampleapp
 
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
@@ -19,6 +21,10 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
     }
+
+    //Кнопка инициализируется через метод findViewById
+    val Button = findViewById<Button>(R.id.button)
+    val Text = findViewById<TextView>(R.id.textView)
 }
 
 @Composable

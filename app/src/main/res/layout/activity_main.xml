@@ -12,6 +12,7 @@
         android:layout_gravity="center"
         android:text="TextView"
         android:textAlignment="center"
+        android:layout_marginTop="60dp"
         android:textSize="30sp"/>
 
     <Button

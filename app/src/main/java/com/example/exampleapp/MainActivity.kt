@@ -20,12 +20,21 @@ class MainActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-    }
 
-    //Кнопка инициализируется через метод findViewById
-    val Button = findViewById<Button>(R.id.button)
-    val Text = findViewById<TextView>(R.id.textView)
+        //Кнопка инициализируется через метод findViewById
+        val Button = findViewById<Button>(R.id.button)
+        val Text = findViewById<TextView>(R.id.textView)
+        var count = 0
+
+        //setOnCliclLestener
+        Button.setOnClickListener {
+            //Тут объявляются действия, когда кнопка нажата.
+            count = count + 1
+            Text.text = "$count"
+        }
+    }
 }
+
 
 @Composable
 fun Greeting(name: String, modifier: Modifier = Modifier) {
